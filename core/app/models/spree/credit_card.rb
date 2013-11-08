@@ -97,7 +97,8 @@ module Spree
         :year => year,
         :verification_value => verification_value,
         :first_name => first_name,
-        :last_name => last_name
+        :last_name => last_name,
+        :brand => cc_type
       )
     end
 

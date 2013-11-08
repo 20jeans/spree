@@ -2,6 +2,7 @@ module Spree
   class Payment < ActiveRecord::Base
     module Processing
       def process!
+        binding.pry
         if payment_method && payment_method.source_required?
           if source
             if !processing?
