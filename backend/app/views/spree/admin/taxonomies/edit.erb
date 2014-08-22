@@ -20,9 +20,9 @@
     <div>
       <%= label_tag nil, Spree.t(:tree) %><br />
       <script>
-        Spree.routes.taxonomy_taxons_path = "<%= spree.api_taxonomy_taxons_path(@taxonomy) %>";
-        Spree.routes.admin_taxonomy_taxons_path = "<%= spree.admin_taxonomy_taxons_path(@taxonomy) %>";
-        Spree.routes.jstree_theme_path = "<%= stylesheet_path("jquery.jstree/themes/apple/style.css") %>";
+        Spree.routes.taxonomy_taxons_path = "<%= spree.api_taxonomy_taxons_path(@taxonomy).html_safe %>";
+        Spree.routes.admin_taxonomy_taxons_path = "<%= spree.admin_taxonomy_taxons_path(@taxonomy).html_safe %>";
+        Spree.routes.jstree_theme_path = "<%= stylesheet_path("jquery.jstree/themes/apple/style.css").html_safe %>";
       </script>
       <div id="taxonomy_tree" class="tree"></div>
     </div>
